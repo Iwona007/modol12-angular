@@ -8,7 +8,7 @@ import {Image} from '../model/image';
 })
 export class QuoteService {
 
-  apiUrl: string = 'http://localhost:8080/ocr/';
+  apiUrl: string = 'https://modol12.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) {
   }
