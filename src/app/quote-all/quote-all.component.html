@@ -1,0 +1,39 @@
+<div class="content" role="main">
+  <h3>Get all quotes</h3>
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Url</th>
+      <th scope="col">Content</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let image of images; index as i">
+      <td>
+        {{ image.id }}
+      </td>
+
+    <td > {{ image.url }}</td>
+      <td>{{ image.content }}</td>
+      <button type="submit" (click)="delete(image.id)" class="btn btn-danger">X</button>
+
+    </tr>
+    </tbody>
+  </table>
+
+
+
+<!--  <ul class="list-group">-->
+<!--    <li class="list-group-item list-group-item-action" *ngFor="let image of images">-->
+<!--      {{image.id}} {{image.url}} {{image.content}}-->
+<!--      <button type="submit" (click)="delete(image.id)" class="btn btn-danger">X</button>-->
+<!--    </li>-->
+<!--  </ul>-->
+
+  <div *ngIf="isImageDelete == true">
+    <h3>Quote has been deleted</h3>
+  </div>
+</div>
+
