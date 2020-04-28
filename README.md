@@ -4,7 +4,7 @@ na podstawie dostarczonego obrazka. Możesz wykorzystać bibliotekę:
 https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
 
 2.Technology backend:
- - Java11
+ - Java8
  - Spring Boot
  - remote mySql
  
@@ -14,5 +14,4 @@ https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
  
  4.Technology for frontend:
  - Angular CLI
- - HTML + Css
- - Material Design for Bootstrap
+
