@@ -12,7 +12,6 @@ export class QuoteAllComponent implements OnInit {
   images: Array<Image> = null;
   isImageDelete: boolean = false;
   id: number;
-  private image: Image;
 
   constructor(private service: QuoteService) {
   }

@@ -11,7 +11,6 @@ export class QuoteAddComponent implements OnInit {
   showAdd: boolean = false;
   newImage: Image = new NewImage();
   isNewImageAdded: boolean = false;
-  image: Image;
 
   constructor(private service: QuoteService) {
   }
