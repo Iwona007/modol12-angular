@@ -30,20 +30,12 @@ export class QuoteAllComponent implements OnInit {
     });
   }
 
-  // delete(image: Image) {
-  //   this.service.delete(image).subscribe(() => {
-  //     this.refresh();
-  //     console.log();
-  //   });
-  //   // this.isImageDelete = true;
-  // }
-
   delete(id: number) {
     this.service.delete(id).subscribe(() => {
       this.refresh();
       console.log();
+      this.isImageDelete = true;
     });
-    this.isImageDelete = true;
   }
 
   refresh() {

@@ -30,7 +30,6 @@ export class QuoteAddComponent implements OnInit {
     });
     this.isNewImageAdded = true;
   }
-
 }
 
 class NewImage implements Image {
