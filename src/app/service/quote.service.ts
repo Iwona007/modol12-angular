@@ -14,8 +14,8 @@ const httpOptions = {
 })
 export class QuoteService {
 
-  apiUrl: string = 'https://modol12.herokuapp.com/ocr/';
-  // apiUrl: string = 'http://localhost:8080/ocr/';
+  // apiUrl: string = 'https://modol12.herokuapp.com/ocr/';
+  apiUrl: string = 'http://localhost:8080/ocr/';
 
   constructor(private httpClient: HttpClient) {
   }
