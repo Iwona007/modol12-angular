@@ -1,3 +1,6 @@
+"scripts": {
+"start": "node server.js"
+}
 {
   "name": "modol12-angular",
   "version": "0.0.0",
