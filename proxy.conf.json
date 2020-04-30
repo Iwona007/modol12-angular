@@ -1,6 +1,10 @@
 {
-  "/ocr": {
+  "/modol12/rest": {
     "target": "http://localhost:8080",
-    "seurce": false
+    "secure": false
+  },
+  "/model12-angular": {
+    "target": "http://localhost:4200",
+    "secure": false
   }
 }
