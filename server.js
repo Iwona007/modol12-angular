@@ -20,13 +20,13 @@ app.listen(app.get('port'), function () {
 // const app = express();
 // const path = require('path');
 //
-// app.use(express.static(__dirname + '/dist/model12v2-angular'));
+// app.use(express.static(__dirname + '/dist/model12-angular'));
 //
 // app.listen(process.env.PORT || 8080);
 //
 // // ??PathLocationStrategy
 // app.get('/*', function (req, res) {
-//   res.sendFile(path.join(__dirname, '/dist/model12v2-angular/index.html'));
+//   res.sendFile(path.join(__dirname, '/dist/model12-angular/index.html'));
 // });
 //
 //
