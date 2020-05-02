@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
-import {Image} from '../model/image';
+import {Image} from '../../model/image';
 
 const httpOptions = {
   headers: new HttpHeaders({
