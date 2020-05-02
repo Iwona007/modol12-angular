@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {QuoteService} from '../shered/service/quote.service';
+import {QuoteService} from '../service/quote.service';
 import {Image} from '../model/image';
 
 @Component({

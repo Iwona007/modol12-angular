@@ -6,7 +6,6 @@ import {QuoteAddComponent} from './quote-add/quote-add.component';
 import {QuoteAllComponent} from './quote-all/quote-all.component';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-import {RouterModule} from '@angular/router';
 import {RoutingModule} from './routing.module';
 
 @NgModule({
