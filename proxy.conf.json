@@ -1,21 +1,21 @@
-{
-  "/modol12/rest": {
-    "target": "http://localhost:8080",
-    "secure": false
-  },
-  "/model12-angular": {
-    "target": "http://localhost:4200",
-    "secure": false
-  }
-}
-
 //{
-//  "/api": {
-//    "target":"https://modol12.herokuapp.com/",
-//    "secure": true,
-//    "pathRewrite": {
-//      "^/api": ""
-//    },
-//    "changeOrigin": true
+//  "/modol12/rest": {
+//    "target": "http://localhost:8080",
+//    "secure": false
+//  },
+//  "/model12-angular": {
+//    "target": "http://localhost:4200",
+//    "secure": false
 //  }
 //}
+
+{
+  "/ocr": {
+    "target":"https://modol12.herokuapp.com/",
+    "secure": true,
+    "pathRewrite": {
+      "^/ocr": ""
+    },
+    "changeOrigin": true
+  }
+}

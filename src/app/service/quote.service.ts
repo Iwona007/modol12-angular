@@ -21,15 +21,15 @@ export class QuoteService {
   }
 
   getAll(): Observable<Array<Image>> {
-    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/quote-all', httpOptions);
+    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/all', httpOptions);
   }
 
   addImage(image: Image): Observable<Image> {
-    return this.httpClient.post<Image>(this.apiUrl + '/ocr/quote-add', image, httpOptions);
+    return this.httpClient.post<Image>(this.apiUrl + '/ocr/add', image, httpOptions);
   }
 
   delete(id: number): Observable<Image> {
-    const url = `${this.apiUrl + '/ocr/quote-all/'}/${id}`;
+    const url = `${this.apiUrl + '/ocr/all/'}/${id}`;
     return this.httpClient.delete<Image>(url, httpOptions);
   }
 }
