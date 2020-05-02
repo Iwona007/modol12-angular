@@ -16,6 +16,7 @@ export class QuoteAddComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.addImage();
   }
 
   showForm() {
