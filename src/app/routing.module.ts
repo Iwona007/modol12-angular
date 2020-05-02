@@ -5,7 +5,6 @@ import {QuoteAllComponent} from './quote-all/quote-all.component';
 
 
 const routes: Routes = [
-  // {path: '', pathMatch: 'full'},
   {
     path: 'quote-add',
     component: QuoteAddComponent
