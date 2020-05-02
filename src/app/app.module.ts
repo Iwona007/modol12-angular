@@ -4,9 +4,9 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {QuoteAddComponent} from './quote-add/quote-add.component';
 import {QuoteAllComponent} from './quote-all/quote-all.component';
-import {RoutingModule} from './routing.module';
 import {HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,17 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    RoutingModule,
+    // RoutingModule,
+    RouterModule.forRoot([
+      {
+        path: 'quote-add',
+        component: QuoteAddComponent
+      },
+      {
+        path: 'quote-all',
+        component: QuoteAllComponent
+      }
+    ]),
     HttpClientModule,
     FormsModule
 

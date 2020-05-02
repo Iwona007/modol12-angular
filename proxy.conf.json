@@ -10,11 +10,11 @@
 //}
 
 {
-  "/ocr": {
+  "/api": {
     "target":"https://modol12.herokuapp.com/",
     "secure": true,
     "pathRewrite": {
-      "^/ocr": ""
+      "^/api": ""
     },
     "changeOrigin": true
   }
