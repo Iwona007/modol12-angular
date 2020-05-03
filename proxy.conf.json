@@ -1,13 +1,13 @@
-//{
-//  "/modol12/rest": {
-//    "target": "http://localhost:8080",
-//    "secure": false
-//  },
-//  "/model12-angular": {
-//    "target": "http://localhost:4200",
-//    "secure": false
-//  }
-//}
+{
+  "/modol12/rest": {
+    "target": "https://modol12.herokuapp.com",
+    "secure": false
+  },
+  "/model12-angular": {
+    "target": "https://modol12-angular3.herokuapp.com",
+    "secure": false
+  }
+}
 
 //{
 //  "/ocr": {
