@@ -9,13 +9,13 @@
 //  }
 //}
 
-{
-  "/ocr": {
-    "target":"https://modol12.herokuapp.com",
-    "secure": false,
-    "pathRewrite": {
-      "^/ocr": ""
-    },
-    "changeOrigin": true
-  }
-}
+//{
+//  "/ocr": {
+//    "target":"https://modol12.herokuapp.com",
+//    "secure": false,
+//    "pathRewrite": {
+//      "^/ocr": ""
+//    },
+//    "changeOrigin": true
+//  }
+//}
