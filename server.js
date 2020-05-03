@@ -29,5 +29,6 @@ app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, '/dist/modol12-angular/index.html'));
 });
 
+
 console.log('Console listening!' + app.get('port'));
 

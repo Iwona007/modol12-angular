@@ -1,38 +1,52 @@
-<div>
-  <button (click)="showForm()" class="btn btn-light btn-lg btn-block"> Add new quote</button>
-  <div>
-  </div>
-  <br>
-  <div *ngIf="showAdd">
+<!--<div>-->
+<!--  <button (click)="showForm()" class="btn btn-light btn-lg btn-block"> Add new quote</button>-->
+<!--  <div>-->
+<!--  </div>-->
+<!--  <br>-->
+<!--  <div *ngIf="showAdd">-->
 
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-      </div>
-      <input type="text" class="form-control" id="InputUrl" [(ngModel)]="newImage.url" placeholder="Address Url"
-             aria-describedby="inputGroup-sizing-default">
-      <div class="input-group-append">
-      </div>
-      <br>
-      <div class="input-group mb-3">
-        <div class="input-group-prepend">
-        </div>
+<!--    <div class="input-group mb-3">-->
+<!--      <div class="input-group-prepend">-->
+<!--      </div>-->
+<!--      <input type="text" class="form-control" id="InputUrl" [(ngModel)]="newImage.url" placeholder="Address Url"-->
+<!--             aria-describedby="inputGroup-sizing-default">-->
+<!--      <div class="input-group-append">-->
+<!--      </div>-->
+<!--      <br>-->
+<!--      <div class="input-group mb-3">-->
+<!--        <div class="input-group-prepend">-->
+<!--        </div>-->
 
-      </div>
-      <input type="text" class="form-control" id="InputContent" [(ngModel)]="newImage.content" placeholder="Content"
-             readonly>
-      <div class="input-group-append">
-      </div>
-    </div>
+<!--      </div>-->
+<!--      <input type="text" class="form-control" id="InputContent" [(ngModel)]="newImage.content" placeholder="Content"-->
+<!--             readonly>-->
+<!--      <div class="input-group-append">-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div>
-      <button (click)="addImage()" class="btn btn-primary btn-lg btn-block">Save</button>
-    </div>
-  </div>
+<!--    <div>-->
+<!--      <button (click)="addImage()" class="btn btn-primary btn-lg btn-block">Save</button>-->
+<!--    </div>-->
+<!--  </div>-->
 
-  <div *ngIf="isNewImageAdded == true">
-    <h3>Quote has been added</h3>
+<!--  <div *ngIf="isNewImageAdded == true">-->
+<!--    <h3>Quote has been added</h3>-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<div class="content" role="main">
+
+  <form (ngSubmit)="onSubmit()">
+    <label for="url">Url: </label>
+    <input [(ngModel)]="newImage.url" type="url" id="url" name="url" required>
+
+    <label for="content">Content:</label>
+    <input [(ngModel)]="newImage.content" type="text" id="content" name="content" readonly>
+    <button type="submit">Add </button>
+  </form>
+
+  <div *ngIf="isNewImageAdded != null">
+    <h2>Car Added</h2>
   </div>
 </div>
-
-
-

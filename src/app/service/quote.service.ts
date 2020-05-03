@@ -14,10 +14,11 @@ const httpOptions = {
 })
 export class QuoteService {
 
-  apiUrl: string = 'https://modol12.herokuapp.com';
+  apiUrl: string; // = 'https://modol12.herokuapp.com';
   // apiUrl: string = 'http://localhost:8080/ocr/';
 
   constructor(private httpClient: HttpClient) {
+    this.apiUrl = 'https://modol12.herokuapp.com';
   }
 
   getAll(): Observable<Array<Image>> {

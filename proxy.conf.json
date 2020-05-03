@@ -11,8 +11,8 @@
 
 {
   "/ocr": {
-    "target":"https://modol12.herokuapp.com/",
-    "secure": true,
+    "target":"https://modol12.herokuapp.com",
+    "secure": false,
     "pathRewrite": {
       "^/ocr": ""
     },

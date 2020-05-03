@@ -16,14 +16,14 @@ export class QuoteAddComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.addImage();
+
   }
 
   showForm() {
     this.showAdd = !this.showAdd;
   }
 
-  addImage() {
+  onSubmit() {
     this.service.addImage(this.newImage).subscribe((image) => {
       this.newImage = image;
       console.log(image);
