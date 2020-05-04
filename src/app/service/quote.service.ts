@@ -22,7 +22,11 @@ export class QuoteService {
   }
 
   getAll(): Observable<Array<Image>> {
-    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/all', httpOptions);
+    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/all' //{
+      //     headers: new HttpHeaders ('Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
+      //     'MyClientCert': '', 'MyToken': ''})
+      // }).pipe(map(res =>), catchError(err =>throwError(err))};
+    );
   }
 
   addImage(image: Image): Observable<Image> {
