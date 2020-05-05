@@ -11,19 +11,18 @@ export class QuoteAddComponent implements OnInit {
   showAdd: boolean = false;
   newImage: Image = new NewImage();
   isNewImageAdded: boolean = false;
+  url: string;
 
-  constructor(private service: QuoteService) {
-  }
+  constructor(private service: QuoteService) {}
 
   ngOnInit(): void {
-
   }
 
   showForm() {
     this.showAdd = !this.showAdd;
   }
 
-  onSubmit() {
+  addImage() {
     this.service.addImage(this.newImage).subscribe((image) => {
       this.newImage = image;
       console.log(image);

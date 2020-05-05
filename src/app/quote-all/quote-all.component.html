@@ -10,12 +10,12 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let image of images; index as i">
+    <tr *ngFor="let image of images ">
       <td>
         {{ image.id }}
       </td>
 
-    <td > {{ image.url }}</td>
+      <td > {{ image.url }}</td>
       <td>{{ image.content }}</td>
       <button type="submit" (click)="delete(image.id)" class="btn btn-danger">X</button>
 
@@ -27,4 +27,3 @@
     <h3>Quote has been deleted</h3>
   </div>
 </div>
-

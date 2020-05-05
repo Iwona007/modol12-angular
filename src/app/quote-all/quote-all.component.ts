@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {QuoteService} from '../service/quote.service';
 import {Image} from '../model/image';
+import {HttpErrorResponse} from '@angular/common/http';
 
 @Component({
   selector: 'app-quote-all',
@@ -24,9 +25,11 @@ export class QuoteAllComponent implements OnInit {
 
   getAll() {
     this.service.getAll().subscribe((images) => {
-      this.images = images;
-      console.log();
-    });
+        console.log();
+      },
+      (error: HttpErrorResponse) => {
+        console.log(error.status);
+      });
   }
 
   delete(id: number) {
@@ -39,7 +42,10 @@ export class QuoteAllComponent implements OnInit {
 
   refresh() {
     this.service.getAll().subscribe(image => {
-      this.images = image;
-    });
+        this.images = image;
+      },
+      (error: HttpErrorResponse) => {
+        console.log(error.status);
+      });
   }
 }

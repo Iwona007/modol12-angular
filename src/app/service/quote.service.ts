@@ -14,19 +14,14 @@ const httpOptions = {
 })
 export class QuoteService {
 
-  apiUrl: string; // = 'https://modol12.herokuapp.com';
+  apiUrl: string = 'https://modol12.herokuapp.com';
   // apiUrl: string = 'http://localhost:8080/ocr/';
 
   constructor(private httpClient: HttpClient) {
-    this.apiUrl = 'https://modol12.herokuapp.com';
   }
 
   getAll(): Observable<Array<Image>> {
-    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/all' //{
-      //     headers: new HttpHeaders ('Content-Type': 'application/json', 'X-Requested-With': 'XMLHttpRequest',
-      //     'MyClientCert': '', 'MyToken': ''})
-      // }).pipe(map(res =>), catchError(err =>throwError(err))};
-    );
+    return this.httpClient.get<Array<Image>>(this.apiUrl + '/ocr/all', httpOptions);
   }
 
   addImage(image: Image): Observable<Image> {
