@@ -28,7 +28,7 @@ export class QuoteService {
     return this.httpClient.post<Image>(this.apiUrl + '/ocr/add', image, httpOptions);
   }
 
-  delete(id: number): Observable<Image> {
+  delete(id: string): Observable<Image> {
     const url = `${this.apiUrl + '/ocr/all/'}/${id}`;
     return this.httpClient.delete<Image>(url, httpOptions);
   }

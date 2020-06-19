@@ -12,7 +12,7 @@ export class QuoteAllComponent implements OnInit {
 
   images: Array<Image> = null;
   isImageDelete: boolean = false;
-  id: number;
+  id: string;
 
   constructor(private service: QuoteService) {
   }
@@ -21,6 +21,7 @@ export class QuoteAllComponent implements OnInit {
     this.getAll();
     this.delete(this.id);
     this.refresh();
+    console.log('id', this.id);
   }
 
   getAll() {
@@ -32,7 +33,7 @@ export class QuoteAllComponent implements OnInit {
       });
   }
 
-  delete(id: number) {
+  delete(id: string) {
     this.service.delete(id).subscribe(() => {
       this.refresh();
       console.log();
