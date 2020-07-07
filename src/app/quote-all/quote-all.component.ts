@@ -11,7 +11,8 @@ import {HttpErrorResponse} from '@angular/common/http';
 export class QuoteAllComponent implements OnInit {
 
   images: Array<Image> = null;
-  isImageDelete: boolean = false;
+  image: Image;
+  isImageDelete = false;
   id: string;
 
   constructor(private service: QuoteService) {
@@ -19,13 +20,14 @@ export class QuoteAllComponent implements OnInit {
 
   ngOnInit(): void {
     this.getAll();
-    this.delete(this.id);
-    this.refresh();
+    // this.delete(this.id);
+    // this.refresh();
     console.log('id', this.id);
   }
 
   getAll() {
-    this.service.getAll().subscribe((images) => {
+    this.service.getAll().subscribe(image => {
+        this.images = image;
         console.log();
       },
       (error: HttpErrorResponse) => {
@@ -34,19 +36,20 @@ export class QuoteAllComponent implements OnInit {
   }
 
   delete(id: string) {
-    this.service.delete(id).subscribe(() => {
-      this.refresh();
+    this.service.delete(id).subscribe((image ) => {
+      this.image = image;
+      // this.refresh();
       console.log();
-      this.isImageDelete = true;
     });
+    this.isImageDelete = true;
   }
 
-  refresh() {
-    this.service.getAll().subscribe(image => {
-        this.images = image;
-      },
-      (error: HttpErrorResponse) => {
-        console.log(error.status);
-      });
-  }
+  // refresh() {
+  //   this.service.getAll().subscribe(image => {
+  //       this.images = image;
+  //     },
+  //     (error: HttpErrorResponse) => {
+  //       console.log(error.status);
+  //     });
+  // }
 }

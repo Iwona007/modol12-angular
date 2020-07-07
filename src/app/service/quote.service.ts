@@ -29,7 +29,7 @@ export class QuoteService {
   }
 
   delete(id: string): Observable<Image> {
-    const url = `${this.apiUrl + '/ocr/all/'}/${id}`;
+    const url = `${this.apiUrl}/ocr/delete/${id}`;
     return this.httpClient.delete<Image>(url, httpOptions);
   }
 }

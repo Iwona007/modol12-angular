@@ -1,25 +1,23 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, TestBed} from '@angular/core/testing';
 
-import { QuoteAllComponent } from './quote-all.component';
+import {QuoteAllComponent} from './quote-all.component';
+import {QuoteService} from '../service/quote.service';
 
 describe('QuoteAllComponent', () => {
-  let component: QuoteAllComponent;
-  let fixture: ComponentFixture<QuoteAllComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ QuoteAllComponent ]
-    })
-    .compileComponents();
+      declarations: [
+        QuoteAllComponent
+      ], providers: [
+        {provide: QuoteService, quoteService: {}}
+      ]
+    }).compileComponents();
   }));
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(QuoteAllComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  const fixture = TestBed.createComponent(QuoteAllComponent);
+  const quoteAll = fixture.componentInstance;
+  expect(quoteAll).toBeTruthy();
+});
 });

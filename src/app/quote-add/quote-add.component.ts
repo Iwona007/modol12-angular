@@ -8,9 +8,9 @@ import {Image} from '../model/image';
   styleUrls: ['./quote-add.component.css']
 })
 export class QuoteAddComponent implements OnInit {
-  showAdd: boolean = false;
+  showAdd = false;
   newImage: Image = new NewImage();
-  isNewImageAdded: boolean = false;
+  isNewImageAdded = false;
   url: string;
 
   constructor(private service: QuoteService) {}
