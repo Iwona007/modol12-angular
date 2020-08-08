@@ -16,9 +16,17 @@ https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j/4.4.1
  - Angular CLI
 
  Please be aware that tess4j does not accept all images even in required format.
- 
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/heroku-all.PNG)
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/mock-test.PNG)
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/mvcMock-test.PNG)
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/swagger-ui.PNG)
-![img](https://github.com/Iwona007/modol12/blob/master/src/main/resources/img/angular-all.PNG)
+ images for heroku all Spring Boot part only:
+![img](https://github.com/Iwona007/modol12-angular/blob/master/src/img/heroku-all.PNG)
+
+images for Mockito test
+![img](https://github.com/Iwona007/modol12-angular/blob/master/src/img/mock-test.PNG)
+
+images for mvcmock test:
+![img](https://github.com/Iwona007/modol12-angular/blob/master/src/img/mvcMock-test.PNG)
+
+images for swagger ui
+![img](https://github.com/Iwona007/modol12-angular/blob/master/src/img/swagger-ui.PNG)
+
+images fro angular all
+![img](https://github.com/Iwona007/modol12-angular/blob/master/src/img/angular-all.PNG)
