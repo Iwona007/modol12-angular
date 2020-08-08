@@ -32,4 +32,8 @@ export class QuoteService {
     const url = `${this.apiUrl}/ocr/delete/${id}`;
     return this.httpClient.delete<Image>(url, httpOptions);
   }
+
+  add(num1: number, num2: number) {
+    return num1 + num2;
+}
 }
